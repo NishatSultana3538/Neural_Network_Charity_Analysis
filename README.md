@@ -43,4 +43,6 @@ In order to optimize the model accuracy, I bucketed the Classification feature d
 
 ## Summary: 
 
-The models accuracy ended up being less than 75% . We started with a data set and tried to predict whether or not the project would be successful on all of the features that we used after dropping two features that we figured to be irrelevant. Although I did not get to the accuracy of 75% that I wanted it is possible the reason for this is we may have had to drop more features which may have affected how good the neural network actually is. Another way to increase the accuracy of  model is to have more data. If we have more data added to this model, the accuracy of this model could possibly increase.
+The models accuracy ended up being less than 75% . We started with a data set and tried to predict whether or not the project would be successful on all of the features that we used after dropping two features that we figured to be irrelevant. Although I did not get to the accuracy of 75% , it is possible the reason for this is we may have had to drop more features which may have affected how good the neural network actually is. Another way to increase the accuracy of  model is to have more data. If we have more data added to this model, the accuracy of this model could possibly increase.
+
+Since we are in a binary classification situation, we could use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
