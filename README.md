@@ -9,25 +9,28 @@ We use the following methods for the analysis:
 * optimize the model.
 
 
-
 ## Results: 
+
 ### Data Preprocessing
+
 * What variable(s) are considered the target(s) for your model? 
 The column IS_SUCCESSFUL considered as the target of this analysis. In this column, we can use binary classification to predict whether or not the charity donation was used effectively.
 
 * What variable(s) are considered to be the features for your model?
-We used columns APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT as features of the analysis.
+We used columns APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT as features of the analysis. Encoding of the categorical variables, spliting into training and testing datasets and standardization have been applied to the features.
+
 
 * What variable(s) are neither targets nor features, and should be removed from the input data?
 We took out the columns of EIN and NAME from the dataframe because these two columns are not relevant to the deep-learning model.
 
 
-
-
 ### Compiling, Training, and Evaluating the Model
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
-In this project, we used 2 hidden layers with 80 and 30 neurons with relu activation function for the deep-learning model. After the train-test split, there are 25,724 samples and 43 features in this dataset. As we will use binary classification for output, we use sigmoid function for the output layer. For compilation, we use adam optimizer and binary_crossentropy loss function.
 
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+This model is made with an input features & two hidden layers. The first hidden layer has 80 neurons, the second has 30 there is also an output layer. Each layer has an activation function. The first and second hidden layers have an activation function "relu" & the output layer is "sigmoid".
+
+![]()
 
 * Were you able to achieve the target model performance?
 Since all our model accuracy are below 75%. In this case, the performance is not capable to help us predict the outcomes of charity donations.
@@ -40,6 +43,4 @@ In order to optimize the model accuracy, I bucketed the Classification feature d
 
 ## Summary: 
 
-
-
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+The models accuracy ended up being less than 75% . We started with a data set and tried to predict whether or not the project would be successful on all of the features that we used after dropping two features that we figured to be irrelevant. Although I did not get to the accuracy of 75% that I wanted it is possible the reason for this is we may have had to drop more features which may have affected how good the neural network actually is. Another way to increase the accuracy of  model is to have more data. If we have more data added to this model, the accuracy of this model could possibly increase.
