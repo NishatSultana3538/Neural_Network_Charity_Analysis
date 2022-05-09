@@ -37,7 +37,7 @@ We use the following methods for the analysis:
 
 * What steps did you take to try and increase model performance?
 
-- In order to optimize the model accuracy, I bucketed the Classification feature differently. When all other conditions are the same, I increased the number of neurons , increased hidden layers for the dataset, as well as change the activation function. I replaced relu function to tanh function for one of the hidden layer. However, all methods that I used did not help to increase the model accuracy.
+In order to optimize the model accuracy, I bucketed the Classification feature differently. When all other conditions are the same, I increased the number of neurons , increased hidden layers for the dataset, as well as change the activation function. I replaced relu function to tanh function for one of the hidden layer. However, all methods that I used did not help to increase the model accuracy.
 
 ![model_optimized](https://github.com/NishatSultana3538/Neural_Network_Charity_Analysis/blob/main/Resources/model-opt.png)
 
@@ -45,4 +45,4 @@ We use the following methods for the analysis:
 
 The models accuracy ended up being less than 75% . We started with a data set and tried to predict whether or not the project would be successful on all of the features that we used after dropping two features that we figured to be irrelevant. Although I did not get to the accuracy of 75% , it is possible the reason for this is we may have had to drop more features which may have affected how good the neural network actually is. Another way to increase the accuracy of  model is to have more data. If we have more data added to this model, the accuracy of this model could possibly increase.
 
-Since we are in a binary classification situation, we could use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
+Since we are in a binary classification situation, we could also use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
